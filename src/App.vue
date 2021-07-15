@@ -1,11 +1,11 @@
 <template>
   <div id="app">
     <div class="container-fluid">
-      <div class="row justify-content-center">
-        <div class="col-3 col-xs-4 col-sm-2 col-md-2 p-0">
+      <div class="row justify-content-center p-5">
+        <div class="col-2 p-0">
           <side-bar />
         </div>
-        <div class="col-9 p-0">
+        <div class="col-10 p-0">
           <HelloWorld msg="Welcome to Your Vue.js App"/>
         </div>
       </div>
@@ -35,6 +35,8 @@ export default {
     font-family: 'Raleway';
     -webkit-font-smoothing: antialiased;
   }
+
+
 </style>
 
 

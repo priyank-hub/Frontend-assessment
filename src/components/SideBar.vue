@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-5" id="side">
+  <div class="mt-5 h-70" id="side">
     
     <div>
       <b-navbar toggleable="lg" type="light" variant="" class="d-flex flex-column m-0">

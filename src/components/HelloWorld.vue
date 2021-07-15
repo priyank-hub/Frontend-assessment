@@ -3,7 +3,7 @@
     <div class="bg-light">
       <b-navbar toggleable="lg" type="light" variant="" class="p-0 navs">
         <b-navbar-brand href="#">
-          <div class="d-flex flex-row">
+          <div class="d-flex flex-row input">
             <i class="fa fa-search text-muted p-2" aria-hidden="true"></i>
             <div class="">
               <input type="email" class="form-control foorm" placeholder="search">
@@ -29,14 +29,16 @@
                 <button class="nav-link text-muted" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contract</button>
               </li>
             </ul>
-            <div class="p-2 mr">
-              <b-icon-gear font-scale="1" />
-            </div>
-            <div class="p-2 mr">
-              <b-icon-envelope-open font-scale="1" />
-            </div>
-            <div class="p-2 mr">
-              <b-icon-box-arrow-right font-scale="1" />
+            <div class="icons">
+              <div class="p-2 mr">
+                <b-icon-gear font-scale="1" />
+              </div>
+              <div class="p-2 mr">
+                <b-icon-envelope-open font-scale="1" />
+              </div>
+              <div class="p-2 mr">
+                <b-icon-box-arrow-right font-scale="1" />
+              </div>
             </div>
           </div>
 
@@ -85,10 +87,10 @@
               </ul>
             </div>
 
-            <div class="p-4 pt-0">
+            <div class="pt-0">
               <div class="container">
                 <div class="row g-2 temp">
-                  <div class="main p-4 rounded">
+                  <div class="main rounded">
                     <h4 class="text-muted">Job Description</h4>
                     <table class="table table-borderless text-muted">
                         <thead>
@@ -234,6 +236,7 @@
 }
 .main {
   background-color: #fff;
+  padding: 40px;
 }
 
 #myTab {
@@ -274,14 +277,34 @@
   padding: 20px;
 }
 
+.icons {
+  display: flex;
+  flex-direction: row;
+}
+
 @media (max-width: 700px) {
   .temp { grid-template-columns: 1fr; }
 
+  .container {
+    padding: 0px;
+  }
   .header {
     flex-direction: column;
   }
 
   .sub-header {
+    padding: 0px;
+  }
+
+  .icons {
+    flex-direction: column;
+  }
+
+  .input {
+    width: 25%;
+  }
+
+  .main {
     padding: 0px;
   }
 
