@@ -45,10 +45,24 @@
       
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-            <div class="pl-2">
-              <div class="p-2 pb-0">
+            <div class="p-2 pl-2 d-flex justify-content-between">
+              <div class="pb-0 mr-6">
                 <h3 class="m-4 mb-0">Master</h3>
                 <p class="m-4 mt-0 mb-2 text-muted">Chemical Tanker</p>
+              </div>
+              <div class="p-4">
+                <button type="button" class="roun btn btn-outline-secondary outl m-3">
+                  <b-icon-stop-fill font-scale="0.9" class="text-success"/>  Active
+                </button>
+                <button type="button" class="roun btn btn-outline-secondary rounded-circle text-primary">
+                  <b-icon-arrow90deg-up font-scale="0.9" />
+                </button>
+                <button type="button" class="roun btn btn-outline-secondary rounded-circle m-3 text-primary">
+                  <b-icon-pencil-square font-scale="0.9" />
+                </button>
+                <button type="button" class="roun btn btn-outline-secondary rounded-circle text-primary">
+                  <b-icon-trash font-scale="0.9" />
+                </button>
               </div>
             </div>
 
@@ -122,7 +136,6 @@
                           </tr>
                         </tbody>
                       </table>
-                    <!-- <div class="p-3 border bg-light">Custom column padding</div> -->
                   </div>
                   
                   <div class="col">
@@ -131,7 +144,6 @@
                         <b-icon-facebook  font-scale="2"></b-icon-facebook>
                         <span class="margin">Share on facebook</span>
                       </div>
-                      <!-- <div class="p-3 border bg-light">Custom column padding</div> -->
                     </div>
                     <div class="col-12 mt-4">
                       <div class="main p-4 rounded">
@@ -174,98 +186,13 @@
                         </div>
                   
                       </div>
-                      <!-- <div class="p-3 border bg-light">Custom column padding</div> -->
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
-
-
-
-
-              <!-- <div class="p-4"> -->
-                
-                <!-- <div class="container p-0">
-                  <div class="row">
-                    <div class="col-9 p-5 main rounded">
-                      <h4 class="text-muted">Job Description</h4>
-                      <table class="table table-borderless text-muted">
-                        <thead>
-                          <tr class="border-none">
-                            <th scope="col" class="">
-                              
-                            </th>
-                            <th scope="col"></th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr class="border-bottom">
-                            <td>Rank</td>
-                            <td>Master</td>
-                          </tr>
-                          <tr class="border-bottom">
-                            <td>Ship type</td>
-                            <td>Chemical Tanker</td>
-                          </tr>
-                          <tr class="border-bottom">
-                            <td>Min Experience</td>
-                            <td>06 Months</td>
-                          </tr>
-                          <tr class="border-bottom">
-                            <td>US Visa</td>
-                            <td>Required</td>
-                          </tr>
-                          <tr class="border-bottom">
-                            <td>Approx Joining</td>
-                            <td>20 September 2016</td>
-                          </tr>
-                          <tr class="border-bottom">
-                            <td>Salary</td>
-                            <td>5000 USD</td>
-                          </tr>
-                          <tr class="border-bottom">
-                            <td>Ship Details</td>
-                            <td>
-                              Chembulk gibrlater<br>
-                              210000 DWT<br>
-                              2010 Built
-                            </td>
-                          </tr>
-                          <tr class="border-bottom">
-                            <td>Description</td>
-                            <td></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <div class="col">
-                      <div class="row align-items-start m-4 mt-0">
-                        <div class="col main rounded d-block">
-                          <b-icon-facebook  class="">
-                          </b-icon-facebook>
-                        </div>
-                      </div>
-
-                      <div class="row align-items-end m-4">
-                        <div class="col main rounded">
-                          down
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div> -->
         </div>
 
-        <!-- <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-          This is some placeholder content the Profile tab's associated content. Clicking another tab will toggle the visibility of this one for the next.
-        </div>
-        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-          This is some placeholder content the Contact tab's associated content. Clicking another tab will toggle the visibility of this one for the next.
-        </div> -->
       </div>     
     </div>
 
@@ -273,8 +200,6 @@
 </template>
 
 <script>
-  // import { BNavbar, BCollapse } from 'bootstrap-vue'
-  // import { BIconFacebook } from 'bootstrap-vue'
 
   export default {
     name: 'HelloWorld',
@@ -283,10 +208,7 @@
     },
 
     components: {
-      // BNavbar,
-      // BTab,
-      // BCollapse,
-      // BIconFacebook,
+
     }, 
 
     data() {
@@ -374,5 +296,13 @@ a {
 
 .first {
   padding-left: 0px;
+}
+
+.roun {
+  background-color: #fff;
+}
+
+.outl {
+  border-radius: 40px;
 }
 </style>
