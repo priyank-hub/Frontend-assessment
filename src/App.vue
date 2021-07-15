@@ -2,10 +2,10 @@
   <div id="app">
     <div class="container-fluid">
       <div class="row justify-content-center p-5">
-        <div class="col-2 p-0">
+        <div class="col-lg-2 p-0">
           <side-bar />
         </div>
-        <div class="col-10 p-0">
+        <div class="col-lg-10 p-0">
           <HelloWorld msg="Welcome to Your Vue.js App"/>
         </div>
       </div>
