@@ -73,12 +73,19 @@
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+h6 {
+  font-family: 'Raleway';
+}
+
+
 .items-center {
   text-align: center;
 }
 
 #side {
-  background-color: #1f47b7;
+  background-color: #3e5eb7;
 }
 
 .sec:hover {

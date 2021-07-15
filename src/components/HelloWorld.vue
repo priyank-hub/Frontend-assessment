@@ -52,7 +52,7 @@
               </div>
               <div class="p-4">
                 <button type="button" class="roun btn btn-outline-secondary outl m-3">
-                  <b-icon-stop-fill font-scale="0.9" class="text-success"/>  Active
+                  <b-icon-stop-fill font-scale="0.9" class="text-success"/>Active
                 </button>
                 <button type="button" class="roun btn btn-outline-secondary rounded-circle text-primary">
                   <b-icon-arrow90deg-up font-scale="0.9" />
@@ -97,8 +97,8 @@
                         </thead>
                         <tbody>
                           <tr class="border-bottom">
-                            <td>Rank</td>
-                            <td>Master</td>
+                            <td colspan="">Rank</td>
+                            <td class="">Master</td>
                           </tr>
                           <tr class="border-bottom">
                             <td>Ship type</td>
@@ -141,7 +141,7 @@
                   <div class="col">
                     <div class="col-12">
                       <div class="main p-4 rounded">
-                        <b-icon-facebook  font-scale="2"></b-icon-facebook>
+                        <b-icon-facebook  font-scale="3" class="text-primary"></b-icon-facebook>
                         <span class="margin">Share on facebook</span>
                       </div>
                     </div>
@@ -150,37 +150,37 @@
                         <h4 class="text-muted">Other Jobs</h4>
 
                         <div class="d-flex flex-row border-bottom pb-3">
-                          <i class="fa fa-building text-muted p-4" aria-hidden="true"></i>
+                          <b-icon-building  font-scale="3" class="m-2"></b-icon-building>
                           <div class="">
-                              <h5>Master</h5>
-                              <span class="text-muted">Chemical Tanker</span>
+                              <p class="title text-primary">Master</p>
+                              <span class="">Chemical Tanker</span>
                               <br><span class="text-muted">Posted: 20 Aug 2016</span>
                           </div>
                         </div>
 
                         <div class="d-flex flex-row border-bottom pb-3 pt-3">
-                          <i class="fa fa-building text-muted p-4" aria-hidden="true"></i>
+                          <b-icon-building  font-scale="3" class="m-2"></b-icon-building>
                           <div class="">
-                              <h5>Master</h5>
-                              <span class="text-muted">Chemical Tanker</span>
+                              <p class="title text-primary">Chief Officer</p>
+                              <span class="">Oil Tanker</span>
                               <br><span class="text-muted">Posted: 20 Aug 2016</span>
                           </div>
                         </div>
 
                         <div class="d-flex flex-row border-bottom pb-3 pt-3">
-                          <i class="fa fa-building text-muted p-4" aria-hidden="true"></i>
+                          <b-icon-building  font-scale="3" class="m-2"></b-icon-building>
                           <div class="">
-                              <h5>Master</h5>
-                              <span class="text-muted">Chemical Tanker</span>
+                              <p class="title text-primary">Executive Officer</p>
+                              <span class="">Bulk Carrier</span>
                               <br><span class="text-muted">Posted: 20 Aug 2016</span>
                           </div>
                         </div>
 
                         <div class="d-flex flex-row pt-3">
-                          <i class="fa fa-building text-muted p-4" aria-hidden="true"></i>
+                          <b-icon-building  font-scale="3" class="m-2"></b-icon-building>
                           <div class="">
-                              <h5>Master</h5>
-                              <span class="text-muted">Chemical Tanker</span>
+                              <p class="title text-primary">Master</p>
+                              <span class="">Chemical Tanker</span>
                               <br><span class="text-muted">Posted: 20 Aug 2016</span>
                           </div>
                         </div>
@@ -272,12 +272,20 @@
   .temp { grid-template-columns: 2fr 1fr; }
 }
 
+.title {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 0px;
+}
+
 .margin {
   margin-left: 20px;
 }
 h3 {
   margin: 40px 0 0;
 }
+
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -305,4 +313,6 @@ a {
 .outl {
   border-radius: 40px;
 }
+
+
 </style>

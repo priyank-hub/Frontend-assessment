@@ -28,8 +28,13 @@ export default {
 </script>
 
 <style scoped>
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+
   #app {
     background-color: #1d2c96;
+    font-family: 'Raleway';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 </style>
 
