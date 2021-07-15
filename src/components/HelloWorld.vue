@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-4 pb-4 justify-content-center">
+  <div class="pb-4 mt-5 justify-content-center">
     <div class="bg-light">
       <b-navbar toggleable="lg" type="light" variant="" class="p-0 navs">
         <b-navbar-brand href="#">
@@ -45,12 +45,13 @@
       
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-            <div class="p-2 pl-2 d-flex justify-content-between">
+            <div class="header p-2 pl-2">
               <div class="pb-0 mr-6">
                 <h3 class="m-4 mb-0">Master</h3>
                 <p class="m-4 mt-0 mb-2 text-muted">Chemical Tanker</p>
               </div>
-              <div class="p-4">
+
+              <div class="sub-header">
                 <button type="button" class="roun btn btn-outline-secondary outl m-3">
                   <b-icon-stop-fill font-scale="0.9" class="text-success"/>Active
                 </button>
@@ -64,6 +65,7 @@
                   <b-icon-trash font-scale="0.9" />
                 </button>
               </div>
+
             </div>
 
             <div class="p-4 pl-8">
@@ -263,10 +265,28 @@
   grid-gap: 1rem;
 }
 
-
-@media (min-width: 600px) {
-  .temp { grid-template-columns: repeat(2, 1fr); }
+.header {
+  display: flex;
+  justify-content: space-between;
 }
+
+.sub-header {
+  padding: 20px;
+}
+
+@media (max-width: 700px) {
+  .temp { grid-template-columns: 1fr; }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .sub-header {
+    padding: 0px;
+  }
+
+}
+
 
 @media (min-width: 900px) {
   .temp { grid-template-columns: 2fr 1fr; }
@@ -313,6 +333,7 @@ a {
 .outl {
   border-radius: 40px;
 }
+
 
 
 </style>

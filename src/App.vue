@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="container-fluid">
-      <div class="row justify-content-center mt-6">
+      <div class="row justify-content-center">
         <div class="col-3 col-xs-4 col-sm-2 col-md-2 p-0">
           <side-bar />
         </div>
@@ -34,7 +34,6 @@ export default {
     background-color: #1d2c96;
     font-family: 'Raleway';
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
   }
 </style>
 
